@@ -17,3 +17,4 @@ A modern and attractive landing page designed to introduce users to the **Freshn
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/freshness-landing-page.git
+![landing page](images/landing page.png)
