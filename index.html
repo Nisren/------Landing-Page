@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freshness Juice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img src="jk.png" alt="Logo" class="logo" />
+
+
+  <!-- 🎥 فيديو الخلفية -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ✨ المحتوى فوق الفيديو -->
+  <div class="overlay">
+    <h1>Freshness</h1>
+    <p>Pure Cool in Every Sip 🍋🌿</p>
+  <p><h3>  Experience the refreshing burst of nature with every can!
+Our unique blend of zesty lemon and cool mint, delivering the perfect balance of flavor and freshness.
+Stay energized, stay fresh — the ultimate thirst quencher for your active lifestyle!</h3></p>
+    <a href="#order" class="cta-button">Order Now</a>
+  </div>
+<!-- نافذة الطلب -->
+<div class="modal" id="order-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Place Your Order</h2>
+    <form id="order-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10,15}" />
+      
+      <select id="flavor" required>
+        <option value="">Select Flavor</option>
+        <option value="lemon">Lemon 🍋</option>
+        <option value="mint">Mint 🌿</option>
+        <option value="lemon-mint">Lemon & Mint 🍃</option>
+      </select>
+
+      <button type="submit">Submit Order</button>
+      <p id="response-message"></p>
+    </form>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
